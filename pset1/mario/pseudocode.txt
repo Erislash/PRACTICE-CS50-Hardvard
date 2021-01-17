@@ -1,0 +1,14 @@
+1) Prompt for user's input. How big will the pyramid be
+    We could do this by using "get_int" function from "cs50" library
+
+2) We HAVE to check user input to be sure it's a number between 1 and 8 (both inclusive)
+    We can do this with a do-while loop
+
+3) We have to start printing the pyramid
+    The number of hashes in each row is the same as the number of the row we are in.
+    As we have to print the pyramid begining on the right, we have to print white spaces until we pass a certain "column"
+        and there is when we'll print hashes. That column can be calculated by
+
+        (totalSize - rowNumber)
+
+    After complete a row, we have to print a new line (\n)
